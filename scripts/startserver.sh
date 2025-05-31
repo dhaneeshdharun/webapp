@@ -1,15 +1,17 @@
 #!/bin/bash
-set -e  # Exit immediately on any error
+##set -e  # Exit immediately on any error
 
-echo "=== [startserver.sh] Starting Tomcat and HTTPD services ===" >> /tmp/deploy.log
+#echo "=== [startserver.sh] Starting Tomcat and HTTPD services ===" >> /tmp/deploy.log
 
 # Start and enable Tomcat
-sudo systemctl enable tomcat.service
-sudo systemctl start tomcat.service
+#sudo systemctl enable tomcat.service
+#sudo systemctl start tomcat.service
 
 # Start and enable Apache HTTPD
-sudo systemctl enable httpd.service
-sudo systemctl start httpd.service
+#udo systemctl enable httpd.service
+#sudo systemctl start httpd.service
 
-echo "=== [startserver.sh] Services started successfully ===" >> /tmp/deploy.log
-exit 0
+#echo "=== [startserver.sh] Services started successfully ===" >> /tmp/deploy.log
+#exit 0
+cd /opt/tomcat9/bin
+sudo ./startup.sh
