@@ -18,7 +18,7 @@ phases:
      - mvn -s settings.xml package
 artifacts:
   files: 
-     - target/javaproject.jar
+     - target/javaproject-1.0-SNAPSHOT.jar
 
 
   discard-paths: no     
