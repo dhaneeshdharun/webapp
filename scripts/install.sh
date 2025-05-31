@@ -31,11 +31,11 @@ TOMCAT_DIR=/opt/tomcat
 #$TOMCAT_DIR/bin/startup.sh
 sudo yum install java-1.8.0-openjdk -y
 cd /opt
-sudo curl -O https://downloads.apache.org/tomcat/tomcat-9/v9.0.85/bin/apache-tomcat-9.0.85.tar.gz
+sudo curl -O https://downloads.apache.org/tomcat/tomcat-9/v9.0.85/bin/apache-tomcat-9.0.105.tar.gz
 
 # Extract
-sudo tar -xzf apache-tomcat-9.0.85.tar.gz
-sudo mv apache-tomcat-9.0.85 tomcat9
+sudo tar -xzf apache-tomcat-9.0.105.tar.gz  
+sudo mv apache-tomcat-9.0.105 tomcat9
 
 # Give permissions
 sudo chmod +x tomcat9/bin/*.sh
