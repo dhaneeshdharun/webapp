@@ -9,7 +9,7 @@ set -e
 # Install Java (required by Tomcat)
 echo "Installing Java..."
 yum install -y java-1.8.0-openjdk
-apt-get update -y
+#apt-get update -y
 
 
 # Define Tomcat version and directory
