@@ -18,7 +18,7 @@ phases:
      - mvn -s javaproject/settings.xml package
 artifacts:
   files: 
-     - target/webapp.war
+     - target/javaproject.war
 
 
   discard-paths: no     
